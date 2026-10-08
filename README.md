@@ -70,6 +70,18 @@ jupyter notebook
 
 6. Analyze the outputs of HPC calculations in [`main_notebook_3.ipynb`](main_notebook_3.ipynb), for the same molecule as in 5., now with a total of 28 observables.
 
+### Revised calculations
+
+The calculations and processed data added during peer review are collected in [`revision_20261006`](revision_20261006). This directory contains:
+
+- the corrected forward-model analysis used for Fig. 5 and Supplementary Figs. S5--S6;
+- the transparent two-observable sampling panels used in Fig. 4;
+- the finite-ensemble Jeffreys correction shown in Supplementary Fig. S7;
+- the block-comparison summaries used to assess finite-time sampling effects; and
+- the runtime benchmark as a function of the number of restrained observables.
+
+The production sampling script [`main_sampling_bayesian.py`](main_sampling_bayesian.py) uses distinct Karplus coefficient sets for the backbone $\gamma$, backbone $\beta/\epsilon$, and sugar couplings.
+
 ---
 
 ## About the Jeffreys prior
